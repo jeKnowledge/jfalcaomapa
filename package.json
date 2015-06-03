@@ -1,10 +1,6 @@
 {
-  "name": "nw-demo",
-  "main": "index.html",
+  "name"    : "TouchScreen JF",
+  "version" : "0.1.0",
+  "main"    : "main.js"
 
-  "window": {
-    "fullscreen": true,
-    "frame": false,
-    "toolbar": false
-  }
 }

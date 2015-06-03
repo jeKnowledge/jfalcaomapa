@@ -1,13 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello World!</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>O marcelino é paneleiro</h1>
-    We are using node.js <script>document.write(process.version)</script>.
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-    <img src="http://www.hamleys.com/images/_lib/tim-lou-big-tool-set-78105-0-1413452226000.jpg">
-  </body>
-</html>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <title>Hello World!</title>
+    </head>
+
+    <body>
+      <style>
+
+
+      #btnMenu {
+          position: relative;
+          left: 200px;
+          top: 500px;
+      }
+
+      </style>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+
+
+      <!--Waiting menu div -->
+
+     <div id="Firstdiv">
+        <div class="row">
+          <div class="col s12"></div>
+        </div>
+
+        <div class="row">
+          <div class="col s2"></div>
+          <div class="col s6 center-align"><h1 class="left-align>">Bem Vindo a Escola<br><b>JOSE FALCAO</b></h1></div>
+          <div class="col s4 center-align">
+              <a class=" waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>button</a>
+          </div>
+        </div>
+
+        <img class="responsive-img" src="test.jpg">
+
+      </div>
+
+        <!-- End of waiting menu div -->
+
+        <script>
+        $( document.body ).click(function () {
+            $( "#Firstdiv" ).slideUp( "slow" );
+        });
+        </script>
+
+
+        <!--Main menu div -->
+        <div class="mainview">
+          <div class="row">
+            <div class="col s12"></div>
+          <div>
+
+          <div class = "row">
+            <div class="col s2"></div>
+            <div class="col s6 center-align"><h1 class="left-align>">Planta Escola<br><b>JOSE FALCAO</b></h1></div>
+          </div>
+
+
+
+
+
+          <div>
+
+            <a id= "btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
+
+          </div>
+
+
+
+    </body>
+  </html>
