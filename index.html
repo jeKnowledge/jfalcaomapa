@@ -1,86 +1,148 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/style.css"/>
+<html>
+<head>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      <title>Hello World!</title>
-    </head>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Hello World!</title>
+</head>
 
-    <body>
-      <style>
-
-
-      #btnMenu {
-          position: relative;
-          left: 200px;
-          top: 500px;
-      }
-
-      </style>
-
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/jquery.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+<body>
+<style>
 
 
+#btnMenu {
+  position: relative;
+  left: 200px;
+  top: 500px;
+}
+
+
+#menu {
+
+  color:#000000
+}
+
+
+#menu
+{
+
+  width: 100%;
+  min-height: 1080px;
+
+}
+
+#letterMenu
+{
+  color: white;
+  font-size: 30px;
+}
+
+#menuQuestion
+{
+  padding-top: 25px;
+  padding-left: 110px;
+  padding-bottom: 50px;
+}
+
+.clickable {
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+}
 
 
 
-      <!--Waiting menu div -->
+</style>
 
-     <div id="Firstdiv">
-        <div class="row">
-          <div class="col s12"></div>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/Users/Pedro/Documents/jeKnowledge/app/js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+
+
+<!--Waiting menu div -->
+
+<div id="Firstdiv">
+  <div class="row">
+    <div class="col s12"></div>
+  </div>
+
+  <div class="row">
+    <div class="col s2"></div>
+    <div class="col s6 center-align"><h1 class="left-align>">Bem Vindo a Escola<br><b>JOSE FALCAO</b></h1></div>
+    <div class="col s4 center-align">
+      <a class=" waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>button</a>
+    </div>
+  </div>
+
+  <img class="responsive-img" src="test.jpg">
+
+</div>
+
+<!-- End of waiting menu div -->
+
+<script>
+$( document.body ).click(function () {
+  $( "#Firstdiv" ).slideUp( "slow" );
+});
+</script>
+
+
+<!--Main menu div -->
+<div class="mainview">
+  <div class="row" style="height: 40px;">
+    <div class="col s12"></div>
+    <div>
+
+      <div class = "row">
+        <div class="col s2"></div>
+        <div class="col s6 center-align"><h1 class="left-align>">Planta Escola<br><b>JOSE FALCAO</b></h1></div>
+      </div>
+
+
+
+      <div id="slidingPanel">
+
+        <div id="menuOff">
+          <a id= "btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
         </div>
 
-        <div class="row">
-          <div class="col s2"></div>
-          <div class="col s6 center-align"><h1 class="left-align>">Bem Vindo a Escola<br><b>JOSE FALCAO</b></h1></div>
-          <div class="col s4 center-align">
-              <a class=" waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>button</a>
+        <div id="menu" style="display:none ; background-color:black">
+          <h1 style="color: white" id="menuQuestion">O que desejas?</h1>
+          <div class="row" id="letterMenu">
+            <div class="col s1"><p> </p></div>
+            <div class="col s2"><button class="clickable"><u>Horarios</u></button></div>
+            <div class="col s2"><button class="clickable"><u>Professor</u></button></div>
+            <div class="col s2"><button class="clickable"><u>Sala</u></button></div>
+            <div class="col s2"><button class="clickable"><u>Servico</u></button></div>
+            <div class="col s3"></div>
+
           </div>
+
+
         </div>
 
-        <img class="responsive-img" src="test.jpg">
 
       </div>
 
-        <!-- End of waiting menu div -->
+      <script>
+      $( "#btnMenu" ).click(function () {
 
-        <script>
-        $( document.body ).click(function () {
-            $( "#Firstdiv" ).slideUp( "slow" );
-        });
-        </script>
+        $( "#menu" ).show( "slow" );
 
 
-        <!--Main menu div -->
-        <div class="mainview">
-          <div class="row">
-            <div class="col s12"></div>
-          <div>
-
-          <div class = "row">
-            <div class="col s2"></div>
-            <div class="col s6 center-align"><h1 class="left-align>">Planta Escola<br><b>JOSE FALCAO</b></h1></div>
-          </div>
-
-
-
-
-
-          <div>
-
-            <a id= "btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
-
-          </div>
+      });
+      </script>
 
 
 
     </body>
-  </html>
+    </html>
