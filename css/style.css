@@ -18,9 +18,9 @@
 
   width: 100%;
   min-height: 1080px;
-  color:#000000
+  background-color: black;
+  display: none;
 }
-
 
 
 #menuQuestion

@@ -12,76 +12,57 @@
 
 <body>
 
-<!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="/Users/Pedro/Documents/jeKnowledge/app/js/jquery.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="/Users/Pedro/Documents/jeKnowledge/app/js/jquery.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
 
 
 
 
-<!--Waiting menu div -->
+  <!--Waiting menu div -->
 
-<div id="welcomeScreen">
+  <div id="welcomeScreen">
 
-  <div  class="row">
-    <div class="col s2"></div>
-    <div class="col s6 center-align"><h1 class="left-align>">Bem Vindo a Escola<br><b>JOSE FALCAO</b></h1></div>
-    <div class="col s4 center-align">
-      <!--Button here? -->
+    <div  class="row">
+      <div class="col s2"></div>
+      <div class="col s6 center-align"><h1 class="left-align>">Bem Vindo a Escola<br><b>JOSE FALCAO</b></h1></div>
+      <div class="col s4 center-align">
+        <!--Button here? -->
+      </div>
     </div>
+
+    <img class="responsive-img" src="test.jpg">
+
   </div>
 
-  <img class="responsive-img" src="test.jpg">
-
-</div>
+  <!-- End of waiting menu div -->
 
 
+  <!--Main menu div -->
+  <div id="mainView">
+    <div class = "row">
+      <div class="col s2"></div>
+      <div class="col s6 center-align"><h1 class="left-align>">Planta Escola<br><b>JOSE FALCAO</b></h1></div>
+    </div>
 
-<!-- End of waiting menu div -->
+    <div>
+      <a id= "btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
 
-<script>
-$( document.body ).click(function () {
-  $( "#welcomeScreen" ).slideUp( "slow" );
-});
-</script>
-
-
-<!--Main menu div -->
-<div id="mainView">
-  <div class = "row">
-    <div class="col s2"></div>
-    <div class="col s6 center-align"><h1 class="left-align>">Planta Escola<br><b>JOSE FALCAO</b></h1></div>
-  </div>
-
-  <div>
-    <a id= "btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
-
-    <div id="menu" style="display:none ; background-color:black">
-      <h1 style="color: white" id="menuQuestion">O que desejas?</h1>
-      <div class="row">
-        <div class="col s1"><p> </p></div>
-        <div class="col s2"><button class="clickable">Horarios</button></div>
-        <div class="col s2"><button class="clickable">Professor</button></div>
-        <div class="col s2"><button class="clickable">Sala</button></div>
-        <div class="col s2"><button class="clickable">Servico</button></div>
-        <div class="col s3"></div>
+      <div id="menu">
+        <h1 style="color: white" id="menuQuestion">O que desejas?</h1>
+        <div class="row">
+          <div class="col s1"><p> </p></div>
+          <div class="col s2"><button class="clickable">Horarios</button></div>
+          <div class="col s2"><button class="clickable">Professor</button></div>
+          <div class="col s2"><button class="clickable">Sala</button></div>
+          <div class="col s2"><button class="clickable">Servico</button></div>
+          <div class="col s3"></div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-      <script>
-      $( "#btnMenu" ).click(function () {
-
-        $( "#menu" ).show( "slow" );
-
-
-      });
-      </script>
-
-
-
-    </body>
-    </html>
+</body>
+</html>

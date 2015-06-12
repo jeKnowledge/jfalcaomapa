@@ -1,6 +1,12 @@
 
 
+$(document).ready(function(){
 
   $( document.body ).click(function () {
-      $( "#Firstdiv" ).slideUp( "slow" );
+    $( "#welcomeScreen" ).slideUp( "slow" );
   });
+
+  $( "#btnMenu" ).click(function () {
+    $( "#menu" ).show( "slow" );
+  });
+});
