@@ -11,53 +11,6 @@
 </head>
 
 <body>
-<style>
-
-
-#btnMenu {
-  position: relative;
-  left: 200px;
-  top: 500px;
-}
-
-
-#menu {
-
-  color:#000000
-}
-
-
-#menu
-{
-
-  width: 100%;
-  min-height: 1080px;
-
-}
-
-#letterMenu
-{
-  color: white;
-  font-size: 30px;
-}
-
-#menuQuestion
-{
-  padding-top: 25px;
-  padding-left: 110px;
-  padding-bottom: 50px;
-}
-
-.clickable {
-  background:none;
-  border:none;
-  margin:0;
-  padding:0;
-}
-
-
-
-</style>
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -70,16 +23,13 @@
 
 <!--Waiting menu div -->
 
-<div id="Firstdiv">
-  <div class="row">
-    <div class="col s12"></div>
-  </div>
+<div id="welcomeScreen">
 
-  <div class="row">
+  <div  class="row">
     <div class="col s2"></div>
     <div class="col s6 center-align"><h1 class="left-align>">Bem Vindo a Escola<br><b>JOSE FALCAO</b></h1></div>
     <div class="col s4 center-align">
-      <a class=" waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>button</a>
+      <!--Button here? -->
     </div>
   </div>
 
@@ -87,51 +37,40 @@
 
 </div>
 
+
+
 <!-- End of waiting menu div -->
 
 <script>
 $( document.body ).click(function () {
-  $( "#Firstdiv" ).slideUp( "slow" );
+  $( "#welcomeScreen" ).slideUp( "slow" );
 });
 </script>
 
 
 <!--Main menu div -->
-<div class="mainview">
-  <div class="row" style="height: 40px;">
-    <div class="col s12"></div>
-    <div>
+<div id="mainView">
+  <div class = "row">
+    <div class="col s2"></div>
+    <div class="col s6 center-align"><h1 class="left-align>">Planta Escola<br><b>JOSE FALCAO</b></h1></div>
+  </div>
 
-      <div class = "row">
-        <div class="col s2"></div>
-        <div class="col s6 center-align"><h1 class="left-align>">Planta Escola<br><b>JOSE FALCAO</b></h1></div>
+  <div>
+    <a id= "btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
+
+    <div id="menu" style="display:none ; background-color:black">
+      <h1 style="color: white" id="menuQuestion">O que desejas?</h1>
+      <div class="row">
+        <div class="col s1"><p> </p></div>
+        <div class="col s2"><button class="clickable">Horarios</button></div>
+        <div class="col s2"><button class="clickable">Professor</button></div>
+        <div class="col s2"><button class="clickable">Sala</button></div>
+        <div class="col s2"><button class="clickable">Servico</button></div>
+        <div class="col s3"></div>
       </div>
-
-
-
-      <div id="slidingPanel">
-
-        <div id="menuOff">
-          <a id= "btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
-        </div>
-
-        <div id="menu" style="display:none ; background-color:black">
-          <h1 style="color: white" id="menuQuestion">O que desejas?</h1>
-          <div class="row" id="letterMenu">
-            <div class="col s1"><p> </p></div>
-            <div class="col s2"><button class="clickable"><u>Horarios</u></button></div>
-            <div class="col s2"><button class="clickable"><u>Professor</u></button></div>
-            <div class="col s2"><button class="clickable"><u>Sala</u></button></div>
-            <div class="col s2"><button class="clickable"><u>Servico</u></button></div>
-            <div class="col s3"></div>
-
-          </div>
-
-
-        </div>
-
-
-      </div>
+    </div>
+  </div>
+</div>
 
       <script>
       $( "#btnMenu" ).click(function () {

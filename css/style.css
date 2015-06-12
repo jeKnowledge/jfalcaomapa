@@ -1,3 +1,45 @@
+#btnMenu {
+  position: relative;
+  left: 200px;
+  top: 500px;
+}
+
+#welcomeScreen
+{
+  padding-top: 25px;
+}
+
+#mainView
+{
+  padding-top: 25px;
+}
+#menu
+{
+
+  width: 100%;
+  min-height: 1080px;
+  color:#000000
+}
+
+
+
+#menuQuestion
+{
+  padding-top: 25px;
+  padding-left: 110px;
+  padding-bottom: 50px;
+}
+
+.clickable {
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  text-decoration: underline;
+  color: white;
+  font-size: 30px;
+}
+
 body {
   overflow: hidden;
 }
