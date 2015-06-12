@@ -6,7 +6,11 @@ $(document).ready(function(){
     $( "#welcomeScreen" ).slideUp( "slow" );
   });
 
+
+
   $( "#btnMenu" ).click(function () {
     $( "#menu" ).show( "slow" );
   });
+
+
 });
