@@ -1,6 +1,22 @@
 {
-  "name"    : "TouchScreen JF",
-  "version" : "0.1.0",
-  "main"    : "main.js"
-
+  "name": "jfalcaomapa",
+  "version": "1.0.0",
+  "description": "![alt tag](https://raw.github.com/dogfalo/materialize/master/images/materialize.gif) ===========",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeKnowledge/jfalcaomapa.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeKnowledge/jfalcaomapa/issues"
+  },
+  "homepage": "https://github.com/jeKnowledge/jfalcaomapa",
+  "dependencies": {
+    "handlebars": "^3.0.3"
+  }
 }
