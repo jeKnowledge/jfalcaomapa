@@ -19,6 +19,8 @@
 }
 
 #menu {
+
+  
   display: none;
   width: 100%;
   min-height: 1080px;
@@ -30,6 +32,7 @@
   padding-left: 110px;
   padding-bottom: 50px;
 }
+
 
 .clickable {
   background:none;
@@ -44,4 +47,3 @@
 body {
   overflow: hidden;
 }
-

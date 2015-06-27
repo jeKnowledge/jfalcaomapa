@@ -7,14 +7,23 @@ function appMain() {
 
   }); */
 
-  $(document.body).on("swipeup",function(){
+  $('#welcomeScreen').on("swipeup",function(){
     $('#welcomeScreen').slideUp('slow');
     $('#mainView').show();
+    $('#menu').hide();
   });
 
+
+
   $('#btnMenu').click(function () {
-    $('#menu').show('slow');
+    $('#menu').slideToggle('slow');
   });
+
+
+  $('#menu').on("swipedown",function(){
+    $('#menu').slideToggle('slow');
+  })
 }
+
 
 $(document).ready(appMain);
