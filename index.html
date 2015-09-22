@@ -7,10 +7,10 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!--<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
   <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="js/swipeUpDown.js"></script>
+<!--  <script src="js/swipeUpDown.js"></script> -->
   <script type="text/javascript" src="js/app.js"></script>
 
   <meta charset="utf-8">
@@ -20,17 +20,17 @@
 
 <body>
 
-  <div data-role="page">
 
-    <div data-role="main" class="ui-content">
       <!--Waiting menu div -->
+    <div data-role="page">
       <div id="welcomeScreen">
         <div  class="row">
           <div class="col s2"></div>
           <div class="col s6 center-align"><h1 class="left-align>">Bem Vindo à Escola<br><b>JOSÉ FALCÃO</b></h1></div>
-          <div class="col s4 center-align">
+          <div class="col s2 "><p></p></div>
+          <div class="col s2"><img class="responsive-img right-align"  src="touchpoint.png"></div>
           </div>
-        </div>
+
 
         <img id="big-front-image" class="responsive-img" src="test.jpg">
       </div>
@@ -43,12 +43,14 @@
         </div>
 
         <div>
-          <a id="btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
+        <a id="btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
+
 
           <div id="menu">
-            <h1 style="color: white" id="menuQuestion">O que desejas?</h1>
 
-            <div class="row">
+            <h1 id="menuQuestion">O que desejas?</h1>
+
+            <div  id="optionRow" class="row">
               <div class="col s1"><p> </p></div>
               <div class="col s2"><button class="clickable">Horarios</button></div>
               <div class="col s2"><button class="clickable" id="Test">Professor</button></div>
@@ -60,6 +62,8 @@
         </div>
       </div>
     </div>
-  </div>
+
 </body>
+
+
 </html>

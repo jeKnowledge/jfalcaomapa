@@ -2,10 +2,12 @@
   position: relative;
   left: 200px;
   top: 500px;
+  
+
 }
 
 #welcomeScreen {
-  padding-top: 25px;
+
 }
 
 #big-front-image {
@@ -14,31 +16,40 @@
 }
 
 #mainView {
-  display: none;
+
   padding-top: 25px;
+
+
 }
 
 #menu {
 
-  
-  display: none;
+
+  position: absolute;
   width: 100%;
   min-height: 1080px;
   background-color: black;
 }
 
 #menuQuestion {
+
+  display: none;
   padding-top: 25px;
   padding-left: 110px;
   padding-bottom: 50px;
+  color: white;
+
 }
+
+#optionRow {
+  display: none;
+}
+
 
 
 .clickable {
   background:none;
   border:none;
-  margin:0;
-  padding:0;
   text-decoration: underline;
   color: white;
   font-size: 30px;
