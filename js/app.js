@@ -2,8 +2,7 @@ function appMain() {
 
 
 
-
-$('#welcomeScreen').click(function() {
+/*$('#welcomeScreen').click(function() {
   $('#menu').hide();
   $('#welcomeScreen').slideUp('slow', function(){
     $('#welcomeScreen').hide();
@@ -11,32 +10,33 @@ $('#welcomeScreen').click(function() {
   $('#mainView').show();
   console.log("Welcome Screen swiped up")
 });
-console.log("ready!");
+console.log("ready!"); */
   /*$(document).on("tap",function(){
     $('#welcomeScreen').slideUp('slow');
     $('#mainView').show();
 
-  });
-
-  //$(document.body).on("swipeup",function(){
-  //$('#welcomeScreen').on("swipeup",function(){
-  $(document.body).click(function () {
-    $('#welcomeScreen').slideUp('slow');
-    $('#mainView').show();
-    $('#menu').hide();
-  });
+  });  */
 
 
-*/
+ $('#welcomeScreen').on("swipeup",function(){
+   $('#menu').hide();
+   $('#welcomeScreen').slideUp('slow', function(){
+     $('#welcomeScreen').hide();
+   });
+   $('#mainView').show();
+   console.log("Welcome Screen swiped up")
+ });
+
+//==========================================//
+//==========================================//
+
+
   $('#btnMenu').click(function () {
-
 
     if ($('#menu').is(':visible')) {
       $('#menu').hide('slow');
       $('#optionRow').fadeOut('fast');
       $('#menuQuestion').fadeOut('fast');
-
-    //  $('#btnMenu').show();
    }
    else{
     $('#menu').show('slow');
@@ -44,17 +44,25 @@ console.log("ready!");
       $('#optionRow').fadeIn('slow');
       $('#menuQuestion').fadeIn('slow');
     },150);
-
-//    $('#btnMenu').hide();
+    $('#btnMenu').hide();
   };
 });
 
 
-/*  $('#menu').on("swipedown",function(){
-    $('#menu').slideToggle('slow');
-  })
-}
-*/
+//==========================================//
+//addsSwipeDown function to menu
+//==========================================//
+
+  $('#menu').on("swipedown",function(){
+    $('#menu').hide('slow');
+    $('#optionRow').fadeOut('fast');
+    $('#menuQuestion').fadeOut('fast');
+    setTimeout(function(){
+        $('#btnMenu').show('slow');
+    },200);
+
+  });
+
 }
 
 $(document).ready(appMain);
