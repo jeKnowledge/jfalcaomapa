@@ -57,8 +57,8 @@ console.log("ready!");
     $('#optionRow').fadeOut('fast');
     $('#menuQuestion').fadeOut('fast');
     setTimeout(function(){
-      $('#btnMenu').show('slow');
-    },200);
+      $('#btnMenu').show('fast');
+    },50);
   });
 }
 
