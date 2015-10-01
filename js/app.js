@@ -1,3 +1,5 @@
+var idleTime = 0;
+
 function appMain() {
 
 
@@ -58,6 +60,29 @@ console.log("ready!");
       $('#btnMenu').show('slow');
     },200);
   });
+}
+
+
+
+//=======================================//
+//IdleTimer
+//======================================//
+var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+
+
+function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 2) { // 20 minutes
+        window.location.reload();
+    }
 }
 
 
