@@ -8,10 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<!--  <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+  <!--<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
   <script type="text/javascript" src="js/materialize.min.js"></script>
-   <script src="js/swipeUpDown.js"></script>
+  <script src="js/swipeUpDown.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/slideshow.js"></script>
 
   <meta charset="utf-8">
 
@@ -19,20 +20,31 @@
 </head>
 
 <body>
+<!--  <div data-role="content"> -->
 
-
-      <!--Waiting menu div -->
-    <div data-role="page">
+  <!--Waiting menu div -->
+  <!--  <div data-role="page"> -->
       <div id="welcomeScreen">
-        <div  class="row">
+        <div  class="row" id="test1">
           <div class="col s2"></div>
           <div class="col s6 center-align"><h1 class="left-align>">Bem Vindo à Escola<br><b>JOSÉ FALCÃO</b></h1></div>
           <div class="col s2 "><p></p></div>
           <div class="col s2"><img class="responsive-img right-align"  src="touchpoint.png"></div>
-          </div>
+        </div>
 
+        <div class="bss-slides imageSlideShow" tabindex="1" autofocus="autofocus">
+          <figure>
+            <img src="test.jpg" width="100%" />
+          <!--  <figcaption>Caption goes here</figcaption>-->
+          </figure>
+          <figure>
+            <img src="test2.jpg" width="100%" />
+            <!--<figcaption>hello</figcaption>-->
+          </figure>
 
-        <img id="big-front-image" class="responsive-img" src="test.jpg">
+          <!-- more figures here as needed -->
+        </div>
+        <!--<img id="big-front-image" class="responsive-img" src="test.jpg">-->
       </div>
 
       <!--Main menu div -->
@@ -43,7 +55,7 @@
         </div>
 
         <div>
-        <a id="btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
+          <a id="btnMenu" class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
 
 
           <div id="menu">
@@ -62,6 +74,19 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <script>
+  var opts = {
+    auto : {
+      speed : 3000,
+      pauseOnHover : true
+    },
+    fullScreen : false,
+    swipe : false
+  };
+  makeBSS('.imageSlideShow', opts);
+  </script>
 
 </body>
 
